@@ -1,2 +1,2 @@
 # BaseService
-A microservice base using dapper & repository pattern with postgresql.
+A microservice base using repository pattern & dapper with postgresql.
