@@ -1,4 +1,3 @@
 # BaseService
 A microservice base using repository pattern, UnitOfWork & Dapper with PostgreSql.
-
-UnitOfWork :check:
+Ready to be containerized with docker :)
