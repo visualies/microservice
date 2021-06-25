@@ -1,2 +1,2 @@
 # BaseService
-A microservice base unsing dapper and repository pattern.
+A microservice base using dapper & repository pattern.
