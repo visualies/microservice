@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BaseService.Data.Repositories
 {
@@ -16,19 +17,19 @@ namespace BaseService.Data.Repositories
             this.transaction = transaction;
         }
 
-        protected T QuerySingleOrDefault<T>(string sql, object param)
+        protected async Task<T> QueryFirstOrDefaultAsync<T>(string sql, object param)
         {
-            return Connection.QuerySingleOrDefault<T>(sql, param, transaction);
+            return await Connection.QueryFirstOrDefaultAsync<T>(sql, param, transaction);
         }
 
-        protected IEnumerable<T> Query<T>(string sql, object param = null)
+        protected async Task<IEnumerable<T>> QueryAsync<T>(string sql, object param = null)
         {
-            return Connection.Query<T>(sql, param, transaction);
+            return await Connection.QueryAsync<T>(sql, param, transaction);
         }
 
-        protected void Execute(string sql, object param)
+        protected async Task ExecuteAsync(string sql, object param)
         {
-            Connection.Execute(sql, param, transaction);
+            await Connection.ExecuteAsync(sql, param, transaction);
         }
     }
 }

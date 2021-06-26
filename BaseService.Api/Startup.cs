@@ -30,7 +30,7 @@ namespace BaseService
         {
             services.AddControllers();
             services.AddSingleton(FileReaderService.GetConfig());
-            services.AddScoped<IUnitOfWork, DapperUnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

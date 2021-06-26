@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BaseService.Data.Repositories
 {
@@ -14,47 +15,49 @@ namespace BaseService.Data.Repositories
 
         }
 
-        public void Add(Example entity)
+        public async Task AddAsync(Example entity)
         {
-            throw new NotImplementedException();
+            var sql = @"INSERT INTO example_table (Name, Description) Values (@Name, @Description)";
+
+            await ExecuteAsync(sql, entity);
         }
 
-        public IEnumerable<Example> All()
+        public async Task<IEnumerable<Example>> GetAllAsync()
         {
             var sql = "SELECT * FROM example_table";
 
-            return Query<Example>(sql);
+            return await QueryAsync<Example>(sql);
         }
 
-        public Example Find(string key)
+        public async Task<Example> GetAsync(string key)
         {
             var sql = "SELECT * FROM example_table WHERE id = @Key";
             var param = new { Key = key };
 
-            return QuerySingleOrDefault<Example>(sql, param);
+            return await QueryFirstOrDefaultAsync<Example>(sql, param);
         }
 
-        public Example FindByName(string exampleName)
+        public async Task<Example> FindByNameAsync(string exampleName)
         {
             var sql = "SELECT * FROM example_table WHERE name = @Name";
             var param = new { Name = exampleName };
 
-            return QuerySingleOrDefault<Example>(sql, param);
+            return await QueryFirstOrDefaultAsync<Example>(sql, param);
         }
 
-        public void Remove(string key)
+        public async Task RemoveAsync(string key)
         {
             var sql = "DELETE FROM example_table WHERE id = @Key";
             var param = new { Key = key };
 
-            Execute(sql, param);
+            await ExecuteAsync(sql, param);
         }
 
-        public void Update(Example entity)
+        public async Task UpdateAsync(Example entity)
         {
             var sql = @"UPDATE example_table SET name = @name, description = @Description WHERE id = @Id";
 
-            Execute(sql, entity);
+            await ExecuteAsync(sql, entity);
         }
     }
 }

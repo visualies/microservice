@@ -21,11 +21,9 @@ namespace BaseService.Controllers
         }
 
         [HttpGet("{id}")]
-        public Example Get(int id)
+        public async Task<Example> Get(int id)
         {
-            var example = context.ExampleRepository.Find(id.ToString());
-
-            Console.WriteLine(example.Name);
+            var example = await context.ExampleRepository.GetAsync(id.ToString());
 
             return example;
         }

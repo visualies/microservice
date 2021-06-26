@@ -10,14 +10,14 @@ using System.Text;
 
 namespace BaseService.Data
 {
-    public class DapperUnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private IDbConnection connection;
         private IDbTransaction transaction;
         private IExampleRepository exampleRepository;
         private bool disposed;
           
-        public DapperUnitOfWork(BaseConfig config)
+        public UnitOfWork(BaseConfig config)
         {
             connection = new NpgsqlConnection(config.Connection.GetConnectionString());
             connection.Open();
@@ -83,7 +83,7 @@ namespace BaseService.Data
             }
         }
 
-        ~DapperUnitOfWork()
+        ~UnitOfWork()
         {
             dispose(false);
         }

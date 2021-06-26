@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BaseService.Core.Repositories
 {
     public interface IBaseRepository<TEntity, TKey> where TEntity : class
     {
-        IEnumerable<TEntity> All();
+        Task<IEnumerable<TEntity>> GetAllAsync();
 
-        TEntity Find(TKey key);
+        Task<TEntity> GetAsync(TKey key);
 
-        void Add(TEntity entity);
+        Task AddAsync(TEntity entity);
 
-        void Update(TEntity entity);
+        Task UpdateAsync(TEntity entity);
 
-        void Remove(TKey key);
+        Task RemoveAsync(TKey key);
     }
 }

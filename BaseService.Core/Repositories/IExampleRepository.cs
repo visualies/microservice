@@ -2,11 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BaseService.Core.Repositories
 {
     public interface IExampleRepository : IBaseRepository<Example, string>
     {
-        Example FindByName(string exampleName);
+        Task<Example> FindByNameAsync(string exampleName);
     }
 }
