@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BaseService.Api.Installers;
 using BaseService.Core;
 using BaseService.Data;
 using BaseService.Services.Services;
@@ -29,8 +30,8 @@ namespace BaseService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton(FileReaderService.GetConfig());
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddConfigurations();
+            services.AddUnitOfWork();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
