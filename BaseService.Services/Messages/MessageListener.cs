@@ -1,14 +1,12 @@
-﻿using BaseService.Core.Entities;
-using Microsoft.Extensions.Hosting;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Hosting;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
-namespace BaseService.Services.Services
+namespace BaseService.Services.Messages
 {
     public class MessageListener : IHostedService, IDisposable
     {

@@ -1,11 +1,9 @@
-﻿using BaseService.Core.Entities;
+﻿using System;
+using System.Text;
 using BaseService.Core.Messages;
 using RabbitMQ.Client;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BaseService.Services.Services
+namespace BaseService.Services.Messages
 {
     public class MessageService : IMessageService
     {
