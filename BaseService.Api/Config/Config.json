@@ -1,9 +1,9 @@
 {
   "Connection": {
-    "Host": "192.168.178.4",
-    "User": "postgres",
-    "Password": "dodopower",
-    "Database": "testing",
-    "Port": 8088
+    "Host": "",
+    "User": "",
+    "Password": "",
+    "Database": "",
+    "Port": 1234
   }
 }
