@@ -1,9 +1,9 @@
 {
   "Connection": {
-    "Host": "",
-    "User": "",
-    "Password": "",
-    "Database": "",
+    "Host": "localhost",
+    "User": "user",
+    "Password": "password",
+    "Database": "postgres",
     "Port": 1234
   }
 }
