@@ -15,5 +15,12 @@ namespace BaseService.Services.Services
             var data = File.ReadAllText(file);
             return JsonConvert.DeserializeObject<BaseConfig>(data);
         }
+
+        public static MessagingConfig GetMessagingConfig()
+        {
+            var file = "./Config/MessagingConfig.json";
+            var data = File.ReadAllText(file);
+            return JsonConvert.DeserializeObject<MessagingConfig>(data);
+        }
     }
 }
