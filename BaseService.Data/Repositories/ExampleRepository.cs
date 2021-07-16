@@ -1,9 +1,7 @@
 ﻿using BaseService.Core.Entities;
 using BaseService.Core.Repositories;
-using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BaseService.Data.Repositories

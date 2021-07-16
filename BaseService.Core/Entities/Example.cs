@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BaseService.Core.Entities
 {
-    public class Example
+    public abstract class Example
     {
         public int Id { get; set; }
         public string Name { get; set; }

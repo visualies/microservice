@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BaseService.Core.Entities
+﻿namespace BaseService.Core.Entities
 {
     public class BaseConfig
     {
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public DataConfig Connection { get; set; }
     }
 }

@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BaseService.Core.Entities
+﻿namespace BaseService.Core.Entities
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
+    // ReSharper disable UnusedAutoPropertyAccessor.Global
+    // ReSharper disable MemberCanBePrivate.Global
     public class DataConfig
     {
         public string Host { get; set; }
