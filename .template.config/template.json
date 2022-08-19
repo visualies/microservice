@@ -1,0 +1,25 @@
+﻿{
+  "author": "Bloom",
+  "name": "Basic Microservice",
+  "description": "Microservice Base Template using RabbitMQ, Repository Pattern, UnitOfWork & Dapper with PostgreSql.",
+  "identity": "Bloom.Service.1.0",
+  "shortName": "baseservice",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "BaseService",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "Targeting .NET 6",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "aspnet6.0"
+        }
+      ],
+      "defaultValue": "aspnet6.0"
+    }
+  }
+}
