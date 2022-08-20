@@ -1,9 +1,12 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using BaseService.Core;
 using BaseService.Core.Entities.RequestEntity;
+using BaseService.Core.Entities.ResponseEntity;
 using BaseService.Core.Messages;
 using BaseService.Core.Services;
 using Microsoft.AspNetCore.Mvc;
+using Nelibur.ObjectMapper;
 
 namespace BaseService.Api.Controllers
 {
@@ -23,10 +26,11 @@ namespace BaseService.Api.Controllers
         public async Task<IActionResult> Find([FromQuery] ExampleRequest request)
         {
             var example = await _exampleService.FindAsync(request);
+            var response = TinyMapper.Map<List<ExampleResponse>>(example);
 
             _messageService.PublishMessage(example,"hello", "hello");
 
-            return Ok(example);
+            return Ok(response);
         }
     }
 }

@@ -1236,3 +1236,963 @@ POSITION: 35
 2022-08-20 15:23:27.868 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 386.5872ms
 2022-08-20 15:23:27.873 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
 2022-08-20 15:23:27.878 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 501.0614ms
+2022-08-20 15:29:47.515 +02:00 [INF] Application starting up.
+2022-08-20 15:29:53.975 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 15:29:53.979 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 15:29:53.983 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 15:29:53.985 +02:00 [INF] Hosting environment: Development
+2022-08-20 15:29:53.989 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 15:30:15.562 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 15:30:15.596 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:30:15.652 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 15:30:16.005 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 15:30:16.028 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 368.5276ms
+2022-08-20 15:30:16.032 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:30:16.077 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 517.0120ms
+2022-08-20 15:32:46.904 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 15:32:46.907 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:32:46.911 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 15:32:47.003 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 15:32:47.008 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 93.4147ms
+2022-08-20 15:32:47.011 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:32:47.053 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 148.9827ms
+2022-08-20 15:34:29.146 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/example/ - -
+2022-08-20 15:34:29.158 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:34:29.160 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 15:34:29.221 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 15:34:29.238 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 74.4896ms
+2022-08-20 15:34:29.241 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:34:29.305 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 159.1982ms
+2022-08-20 15:40:43.649 +02:00 [INF] Application starting up.
+2022-08-20 15:40:45.736 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 15:40:45.740 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 15:40:45.744 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 15:40:45.746 +02:00 [INF] Hosting environment: Development
+2022-08-20 15:40:45.749 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 15:41:12.166 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 15:41:12.199 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:41:12.251 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 15:41:12.606 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 15:41:12.629 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 370.8966ms
+2022-08-20 15:41:12.633 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:41:12.678 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 513.9787ms
+2022-08-20 15:42:04.170 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 15:42:04.172 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:42:04.176 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 15:42:04.257 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 15:42:04.261 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 82.2204ms
+2022-08-20 15:42:04.265 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 15:42:04.306 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 136.3538ms
+2022-08-20 16:12:15.099 +02:00 [INF] Application starting up.
+2022-08-20 16:12:17.458 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 16:12:17.462 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 16:12:17.466 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 16:12:17.468 +02:00 [INF] Hosting environment: Development
+2022-08-20 16:12:17.470 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 16:12:25.962 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:12:25.993 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:12:26.048 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:12:26.501 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 16:12:26.527 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 471.7869ms
+2022-08-20 16:12:26.531 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:12:26.575 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 615.1462ms
+2022-08-20 16:18:21.519 +02:00 [INF] Application starting up.
+2022-08-20 16:18:23.644 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 16:18:23.648 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 16:18:23.653 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 16:18:23.655 +02:00 [INF] Hosting environment: Development
+2022-08-20 16:18:23.656 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 16:18:40.655 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:18:40.689 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:18:40.741 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:18:41.172 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 16:18:41.200 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 451.4274ms
+2022-08-20 16:18:41.204 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:18:41.248 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 594.6210ms
+2022-08-20 16:19:21.417 +02:00 [INF] Application starting up.
+2022-08-20 16:19:23.449 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 16:19:23.454 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 16:19:23.460 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 16:19:23.462 +02:00 [INF] Hosting environment: Development
+2022-08-20 16:19:23.464 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 16:19:39.070 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob - -
+2022-08-20 16:19:39.104 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:19:39.156 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:19:39.546 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 16:19:39.571 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 408.3831ms
+2022-08-20 16:19:39.577 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:19:39.630 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob - - - 200 - application/json;+charset=utf-8 561.9346ms
+2022-08-20 16:19:55.087 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:19:55.091 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:19:55.100 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:19:55.200 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.DomainEntity.Example, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 16:19:55.268 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 165.1054ms
+2022-08-20 16:19:55.270 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:19:55.318 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 231.4056ms
+2022-08-20 16:39:04.835 +02:00 [INF] Application starting up.
+2022-08-20 16:39:07.310 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 16:39:07.315 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 16:39:07.321 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 16:39:07.323 +02:00 [INF] Hosting environment: Development
+2022-08-20 16:39:07.327 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 16:40:08.277 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:40:08.309 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:40:08.365 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:40:08.558 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 185.9272ms
+2022-08-20 16:40:08.563 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:40:08.568 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:40:08.681 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 406.1817ms
+2022-08-20 16:40:33.111 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:40:33.114 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:40:33.120 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:40:33.222 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 98.9464ms
+2022-08-20 16:40:33.225 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:40:33.227 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:40:33.282 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 170.5869ms
+2022-08-20 16:42:04.078 +02:00 [INF] Application starting up.
+2022-08-20 16:42:06.414 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 16:42:06.418 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 16:42:06.424 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 16:42:06.426 +02:00 [INF] Hosting environment: Development
+2022-08-20 16:42:06.427 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 16:42:14.155 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:42:14.190 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:42:14.246 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:42:14.439 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 185.0068ms
+2022-08-20 16:42:14.443 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:42:14.449 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:42:14.563 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 410.3068ms
+2022-08-20 16:42:30.662 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:42:30.671 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:42:30.678 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:42:30.773 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 92.8442ms
+2022-08-20 16:42:30.776 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:42:30.778 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:42:30.832 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 170.8414ms
+2022-08-20 16:42:42.027 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:42:42.030 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:42:42.035 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:42:42.125 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 85.7072ms
+2022-08-20 16:42:42.129 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:42:42.135 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:42:42.212 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 184.6918ms
+2022-08-20 16:47:59.700 +02:00 [INF] Application starting up.
+2022-08-20 16:48:02.054 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 16:48:02.059 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 16:48:02.063 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 16:48:02.065 +02:00 [INF] Hosting environment: Development
+2022-08-20 16:48:02.066 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 16:48:07.223 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:48:07.257 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:48:07.313 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:48:07.691 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 16:48:07.718 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 397.0694ms
+2022-08-20 16:48:07.722 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:48:07.765 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 544.6770ms
+2022-08-20 16:48:29.142 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:48:29.151 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:48:29.157 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:48:29.279 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 117.8989ms
+2022-08-20 16:48:29.282 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:48:29.286 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:48:29.369 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 227.4842ms
+2022-08-20 16:48:53.633 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:48:53.635 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:48:53.641 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:48:53.735 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 90.1085ms
+2022-08-20 16:48:53.737 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:48:53.740 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:48:53.795 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 162.1908ms
+2022-08-20 16:48:59.819 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:48:59.821 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:48:59.827 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:48:59.918 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 88.3421ms
+2022-08-20 16:48:59.921 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:48:59.923 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:48:59.990 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 170.8916ms
+2022-08-20 16:49:04.712 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:49:04.714 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:49:04.721 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:49:04.827 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 92.6606ms
+2022-08-20 16:49:04.829 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:49:04.831 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:49:04.886 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 174.0006ms
+2022-08-20 16:49:13.736 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:49:13.743 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:49:13.753 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:49:13.817 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 16:49:13.838 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 81.8375ms
+2022-08-20 16:49:13.840 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:49:13.887 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 150.6214ms
+2022-08-20 16:50:03.894 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob - -
+2022-08-20 16:50:03.906 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:50:03.910 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:50:03.995 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 16:50:03.997 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 81.6216ms
+2022-08-20 16:50:03.999 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:50:04.063 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob - - - 200 - application/json;+charset=utf-8 168.2551ms
+2022-08-20 16:55:31.240 +02:00 [INF] Application starting up.
+2022-08-20 16:55:33.528 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 16:55:33.533 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 16:55:33.540 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 16:55:33.542 +02:00 [INF] Hosting environment: Development
+2022-08-20 16:55:33.545 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 16:55:50.720 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 16:55:50.756 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:55:50.811 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 16:55:51.003 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 185.0303ms
+2022-08-20 16:55:51.009 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 16:55:51.015 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 16:55:51.120 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 401.8907ms
+2022-08-20 17:03:11.338 +02:00 [INF] Application starting up.
+2022-08-20 17:03:13.690 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:03:13.704 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:03:13.711 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:03:13.713 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:03:13.715 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:03:23.621 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:03:23.657 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:03:23.715 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:03:23.912 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 188.7376ms
+2022-08-20 17:03:23.917 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:03:23.922 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:03:24.020 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 402.0778ms
+2022-08-20 17:03:35.358 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:03:35.360 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:03:35.369 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:03:35.477 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 104.8409ms
+2022-08-20 17:03:35.485 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:03:35.488 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:03:35.574 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 216.3447ms
+2022-08-20 17:03:45.728 +02:00 [INF] Application starting up.
+2022-08-20 17:03:48.080 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:03:48.085 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:03:48.091 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:03:48.093 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:03:48.095 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:04:25.750 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:04:25.787 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:04:25.845 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:04:26.041 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 184.7184ms
+2022-08-20 17:04:26.046 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:04:26.051 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:04:26.155 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 407.4699ms
+2022-08-20 17:04:46.230 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:04:46.232 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:04:46.241 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:04:46.336 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 90.8082ms
+2022-08-20 17:04:46.338 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:04:46.341 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:04:46.410 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 179.5863ms
+2022-08-20 17:04:54.378 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:04:54.380 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:04:54.385 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:04:54.480 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 91.4143ms
+2022-08-20 17:04:54.482 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:04:54.484 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:04:54.540 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 162.1665ms
+2022-08-20 17:05:04.123 +02:00 [INF] Application starting up.
+2022-08-20 17:05:06.230 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:05:06.235 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:05:06.239 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:05:06.242 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:05:06.243 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:05:12.606 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:05:12.637 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:05:12.683 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:05:12.976 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 285.697ms
+2022-08-20 17:05:12.981 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:05:12.985 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:05:13.067 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 462.7018ms
+2022-08-20 17:05:23.048 +02:00 [INF] Application starting up.
+2022-08-20 17:05:25.346 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:05:25.351 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:05:25.355 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:05:25.357 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:05:25.359 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:08:25.791 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:08:25.824 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:08:25.880 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:08:26.067 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 179.2218ms
+2022-08-20 17:08:26.072 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:08:26.077 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:08:26.182 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 393.8977ms
+2022-08-20 17:10:50.256 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:10:50.258 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:10:50.266 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:10:50.572 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 302.3934ms
+2022-08-20 17:10:50.574 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:10:50.577 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:10:50.631 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 374.9243ms
+2022-08-20 17:11:01.901 +02:00 [INF] Application starting up.
+2022-08-20 17:11:04.289 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:11:04.294 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:11:04.300 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:11:04.303 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:11:04.304 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:11:07.221 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:11:07.257 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:11:07.314 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:11:07.502 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 180.4214ms
+2022-08-20 17:11:07.507 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:11:07.512 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:11:07.611 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 392.0937ms
+2022-08-20 17:11:42.813 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:11:42.815 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:11:42.821 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:11:42.917 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 93.1857ms
+2022-08-20 17:11:42.920 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:11:42.922 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:11:42.995 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 181.9261ms
+2022-08-20 17:11:47.089 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:11:47.091 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:11:47.094 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:11:47.192 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 94.9086ms
+2022-08-20 17:11:47.195 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:11:47.198 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:11:47.263 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 173.3805ms
+2022-08-20 17:13:20.782 +02:00 [INF] Application starting up.
+2022-08-20 17:13:23.132 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:13:23.137 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:13:23.142 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:13:23.144 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:13:23.146 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:14:05.870 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:14:05.903 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:14:05.960 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:14:06.153 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 185.5596ms
+2022-08-20 17:14:06.158 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:14:06.163 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'List`1'. Call TinyMapper.Bind<List`1, List`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:14:06.265 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 397.3017ms
+2022-08-20 17:15:24.633 +02:00 [INF] Application starting up.
+2022-08-20 17:15:26.896 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:15:26.900 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:15:26.905 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:15:26.907 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:15:26.909 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:16:15.722 +02:00 [INF] Application starting up.
+2022-08-20 17:16:17.963 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:16:17.968 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:16:17.972 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:16:17.974 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:16:17.975 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:16:55.323 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:16:55.358 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:16:55.414 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:16:55.605 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 182.8297ms
+2022-08-20 17:16:55.609 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:16:55.614 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Nelibur.ObjectMapper.TinyMapperException: No binding found for 'List`1' to 'IEnumerable`1'. Call TinyMapper.Bind<List`1, IEnumerable`1>()
+   at Nelibur.ObjectMapper.TinyMapper.GetMapper(TypePair typePair)
+   at Nelibur.ObjectMapper.TinyMapper.Map[TTarget](Object source)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:16:55.717 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 396.5239ms
+2022-08-20 17:17:04.209 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:17:04.212 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:17:04.218 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:17:04.552 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:17:04.565 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 344.1687ms
+2022-08-20 17:17:04.567 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:17:04.608 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 399.2793ms
+2022-08-20 17:17:38.138 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:17:38.143 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:17:38.149 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:17:38.211 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:17:38.214 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 60.4969ms
+2022-08-20 17:17:38.216 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:17:38.257 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 119.2051ms
+2022-08-20 17:17:47.216 +02:00 [INF] Application starting up.
+2022-08-20 17:17:49.505 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:17:49.509 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:17:49.514 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:17:49.515 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:17:49.519 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:17:59.391 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:17:59.425 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:17:59.481 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:17:59.865 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:17:59.891 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 402.6369ms
+2022-08-20 17:17:59.896 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:17:59.949 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 559.9750ms
+2022-08-20 17:18:01.503 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:01.505 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:01.508 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:01.569 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:01.571 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 59.3216ms
+2022-08-20 17:18:01.573 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:01.614 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 111.2574ms
+2022-08-20 17:18:02.351 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:02.365 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:02.368 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:02.424 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:02.427 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 55.0315ms
+2022-08-20 17:18:02.429 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:02.470 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 119.0001ms
+2022-08-20 17:18:03.516 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:03.518 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:03.521 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:03.576 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:03.579 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 54.9488ms
+2022-08-20 17:18:03.581 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:03.622 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 105.4838ms
+2022-08-20 17:18:04.806 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:04.807 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:04.810 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:04.868 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:04.871 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 56.954ms
+2022-08-20 17:18:04.873 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:04.948 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 142.4109ms
+2022-08-20 17:18:07.371 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:07.373 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:07.376 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:07.436 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:07.439 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 59.5112ms
+2022-08-20 17:18:07.441 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:07.502 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 131.2004ms
+2022-08-20 17:18:13.823 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:13.829 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:13.843 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:14.153 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 306.234ms
+2022-08-20 17:18:14.156 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:14.162 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.NpgsqlException (0x80004005): Exception while writing to stream
+ ---> System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host..
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.CreateException(SocketError error, Boolean forAsyncThrow)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.SendAsyncForNetworkStream(Socket socket, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.SendAsyncForNetworkStream(ReadOnlyMemory`1 buffer, SocketFlags socketFlags, CancellationToken cancellationToken)
+   at System.Net.Sockets.NetworkStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlWriteBuffer.Flush(Boolean async, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Npgsql.Internal.NpgsqlWriteBuffer.Flush(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.<Write>g__WriteExecute|94_0(NpgsqlConnector connector, Boolean async, Boolean flush, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Npgsql.NpgsqlCommand.<Write>g__WriteExecute|94_0(NpgsqlConnector connector, Boolean async, Boolean flush, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.Async.cs:line 88
+   at BaseService.Data.Repositories.RepositoryBase.QueryFilteredAsync[T](String table, Object param) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\RepositoryBase.cs:line 0
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at BaseService.Data.Repositories.RepositoryBase.QueryFilteredAsync[T](String table, Object param)
+   at BaseService.Data.Repositories.ExampleRepository.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\ExampleRepository.cs:line 19
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at BaseService.Data.Repositories.ExampleRepository.FindAsync(ExampleRequest parameters)
+   at BaseService.Services.Services.ExampleService.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Services\Services\ExampleService.cs:line 23
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at BaseService.Services.Services.ExampleService.FindAsync(ExampleRequest parameters)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 28
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request)
+   at lambda_method1(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass10_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.ExecuteWithoutFilterAsync(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Hosting.HostingApplication.ProcessRequestAsync(Context context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(Action action, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult result)
+   at System.IO.Pipelines.StreamPipeReader.<ReadAsync>g__Core|36_0(StreamPipeReader reader, CancellationTokenSource tokenSource, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(Action action, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult result)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.SetResult(TResult result)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.IThreadPoolWorkItem.Execute()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+--- End of stack trace from previous location ---
+
+   --- End of inner exception stack trace ---
+   at Npgsql.Internal.NpgsqlWriteBuffer.Flush(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlWriteBuffer.Flush(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.<Write>g__WriteExecute|94_0(NpgsqlConnector connector, Boolean async, Boolean flush, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at BaseService.Data.Repositories.RepositoryBase.QueryFilteredAsync[T](String table, Object param) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\RepositoryBase.cs:line 35
+   at BaseService.Data.Repositories.ExampleRepository.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\ExampleRepository.cs:line 19
+   at BaseService.Services.Services.ExampleService.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Services\Services\ExampleService.cs:line 23
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-20 17:18:14.283 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 500 - text/plain;+charset=utf-8 459.3944ms
+2022-08-20 17:18:15.575 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:15.577 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:15.580 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:15.708 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:15.710 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 126.8505ms
+2022-08-20 17:18:15.713 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:15.733 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 157.4255ms
+2022-08-20 17:18:20.026 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:20.030 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:20.033 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:20.069 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:20.072 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 35.7089ms
+2022-08-20 17:18:20.075 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:20.095 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 68.5298ms
+2022-08-20 17:18:21.719 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:21.721 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:21.727 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:21.761 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:21.764 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 33.0974ms
+2022-08-20 17:18:21.767 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:21.787 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 68.3363ms
+2022-08-20 17:18:23.720 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:18:23.735 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:23.739 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:18:23.780 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:18:23.783 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 38.4788ms
+2022-08-20 17:18:23.788 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:18:23.811 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 91.1731ms
+2022-08-20 17:21:21.292 +02:00 [INF] Application starting up.
+2022-08-20 17:21:23.379 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-20 17:21:23.384 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-20 17:21:23.388 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-20 17:21:23.390 +02:00 [INF] Hosting environment: Development
+2022-08-20 17:21:23.392 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-20 17:22:17.886 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/ - -
+2022-08-20 17:22:17.919 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:22:17.973 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.RequestEntity.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-20 17:22:18.332 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.ResponseEntity.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-20 17:22:18.358 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 377.1222ms
+2022-08-20 17:22:18.362 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-20 17:22:18.408 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/ - - - 200 - application/json;+charset=utf-8 524.6994ms

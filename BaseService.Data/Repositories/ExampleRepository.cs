@@ -36,14 +36,14 @@ namespace BaseService.Data.Repositories
 
         public async Task CreateAsync(Example entity)
         {
-            const string sql = @"INSERT INTO example_table (name, description) Values (@Name, @Description)";
+            const string sql = @"INSERT INTO example_table (name, last_name) Values (@Name, @LastName)";
 
             await ExecuteAsync(sql, entity);
         }
 
         public async Task UpdateAsync(Example entity)
         {
-            const string sql = @"UPDATE example_table SET name = @name, description = @Description WHERE id = @Id";
+            const string sql = @"UPDATE example_table SET name = @name, last_name = @LastName WHERE id = @Id";
 
             await ExecuteAsync(sql, entity);
         }
@@ -61,7 +61,7 @@ namespace BaseService.Data.Repositories
             const string sql = @"CREATE TABLE IF NOT EXISTS example_table (
                                     id              varchar(50) NOT NULL,
                                     name            varchar(50) NOT NULL,
-                                    description     varchar(50) NOT NULL,
+                                    last_name       varchar(50) NOT NULL,
                                     CONSTRAINT PK__example_table PRIMARY KEY (id)
                                     );";
                

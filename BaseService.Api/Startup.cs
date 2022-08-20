@@ -1,5 +1,7 @@
 using BaseService.Api.Extensions;
 using BaseService.Core.Entities;
+using BaseService.Core.Entities.DomainEntity;
+using BaseService.Core.Entities.ResponseEntity;
 using BaseService.Core.Services;
 using BaseService.Services.Services;
 using Microsoft.AspNetCore.Builder;
@@ -7,6 +9,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Nelibur.ObjectMapper;
+using System.Collections.Generic;
 
 namespace BaseService.Api
 {
@@ -41,7 +45,9 @@ namespace BaseService.Api
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
+            app.AddMappings();
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
+
     }
 }
