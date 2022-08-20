@@ -1,4 +1,4 @@
-﻿using BaseService.Core.Entities.DataEntity;
+﻿using BaseService.Core.Entities.DomainEntity;
 using BaseService.Core.Entities.RequestEntity;
 using BaseService.Core.Repositories;
 using System.Collections.Generic;

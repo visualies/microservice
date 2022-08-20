@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using BaseService.Core;
-using BaseService.Core.Entities.DataEntity;
 using BaseService.Core.Entities.RequestEntity;
 using BaseService.Core.Messages;
 using BaseService.Core.Services;
