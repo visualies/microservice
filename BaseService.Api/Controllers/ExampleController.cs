@@ -54,7 +54,7 @@ namespace BaseService.Api.Controllers
 
             await _exampleService.CreateAsync(example);
 
-            return Ok();
+            return Ok(TinyMapper.Map<ExampleResponse>(example));
         }
 
         [HttpPatch]

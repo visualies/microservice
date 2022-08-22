@@ -1,5 +1,8 @@
-﻿using BaseService.Data.Helper;
+﻿using BaseService.Core.Attributes;
+using BaseService.Core.Entities;
+using BaseService.Data.Helper;
 using Dapper;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -18,20 +21,25 @@ namespace BaseService.Data.Repositories
             _transaction = transaction;
         }
 
-        protected async Task<IEnumerable<T>> QueryFilteredAsync<T>(string table, object param)
+        protected async Task<IEnumerable<T>> QueryFilteredAsync<T>(string table, RequestBase param)
         {
             var sql = $"SELECT * FROM {table}";
             var statements = new List<string>();
 
             var props = param.GetType().GetProperties().Where(a => a.GetValue(param) != null);
-            if (props.Any()) sql += " WHERE ";
+            props = props.Where(a => a.GetCustomAttribute<ReservedParameterAttribute>() == null);
 
+            if (props.Any()) sql += " WHERE ";
             foreach (PropertyInfo prop in props)
             {
                 statements.Add($"{prop.Name.ToSnakeCase()} = @{prop.Name}");
             }
-
             sql += string.Join(" AND ", statements);
+
+            var limit = Math.Min(param.LimitRequestOption ?? 25, 25);
+            var offset = (param.PageRequestOption ?? 0) * limit;
+            sql += $" LIMIT {limit} OFFSET {offset}";   
+
             return await Connection.QueryAsync<T>(sql, param, _transaction);
         }
 

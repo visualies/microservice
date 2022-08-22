@@ -1,16 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BaseService.Core.Attributes;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BaseService.Core.Entities
 {
     public class RequestBase
     {
+        [ReservedParameter]
         [FromQuery(Name = "expand")]
-        public string Expand { get; set; }
+        public string ExpandRequestOption { get; set; }
 
+        [ReservedParameter]
         [FromQuery(Name = "limit")]
-        public int? Limit { get; set; }
+        public int? LimitRequestOption { get; set; }
 
+        [ReservedParameter]
         [FromQuery(Name = "page")]
-        public int? Page { get; set; }
+        public int? PageRequestOption { get; set; }
     }
 }
