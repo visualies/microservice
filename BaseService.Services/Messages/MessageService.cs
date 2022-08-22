@@ -28,7 +28,7 @@ namespace BaseService.Services.Messages
                 autoDelete: false,
                 arguments: null);
 
-            var json = JsonConvert.SerializeObject(payload);
+            var json = System.Text.Json.JsonSerializer.Serialize(payload);
             var body = Encoding.UTF8.GetBytes(json);
             var properties = _channel.CreateBasicProperties();
             properties.Type = typeof(T).Name;

@@ -2635,3 +2635,270 @@ DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error
 2022-08-21 01:42:29.330 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Post (BaseService.Api) in 16171.7674ms
 2022-08-21 01:42:29.333 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Post (BaseService.Api)'
 2022-08-21 01:42:29.359 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/example/?name=Bob&last_name=Freeman - 0 - 200 0 - 16320.0467ms
+2022-08-22 16:53:32.408 +02:00 [INF] Application starting up.
+2022-08-22 16:53:34.751 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-22 16:53:34.756 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-22 16:53:34.761 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 16:53:34.763 +02:00 [INF] Hosting environment: Development
+2022-08-22 16:53:34.765 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-22 16:53:42.169 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - -
+2022-08-22 16:53:42.208 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 16:53:42.264 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.Example.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-22 16:53:42.613 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 341.2911ms
+2022-08-22 16:53:42.618 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 16:53:42.624 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "lastname" does not exist
+
+POSITION: 49
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|213_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at BaseService.Data.Repositories.RepositoryBase.QueryFilteredAsync[T](String table, Object param) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\RepositoryBase.cs:line 34
+   at BaseService.Data.Repositories.ExampleRepository.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\ExampleRepository.cs:line 18
+   at BaseService.Services.Services.ExampleService.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Services\Services\ExampleService.cs:line 20
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "lastname" does not exist
+    Hint: Perhaps you meant to reference the column "example_table.last_name".
+    Position: 49
+    File: parse_relation.c
+    Line: 3633
+    Routine: errorMissingColumn
+2022-08-22 16:53:42.832 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - - - 500 - text/plain;+charset=utf-8 664.8957ms
+2022-08-22 16:54:57.433 +02:00 [INF] Application starting up.
+2022-08-22 16:54:59.625 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-22 16:54:59.629 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-22 16:54:59.633 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 16:54:59.635 +02:00 [INF] Hosting environment: Development
+2022-08-22 16:54:59.637 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-22 16:55:11.777 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - -
+2022-08-22 16:55:11.816 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 16:55:11.872 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.Example.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-22 16:55:12.224 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 344.6227ms
+2022-08-22 16:55:12.230 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 16:55:12.235 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "lastname" does not exist
+
+POSITION: 49
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|213_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at BaseService.Data.Repositories.RepositoryBase.QueryFilteredAsync[T](String table, Object param) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\RepositoryBase.cs:line 34
+   at BaseService.Data.Repositories.ExampleRepository.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\ExampleRepository.cs:line 18
+   at BaseService.Services.Services.ExampleService.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Services\Services\ExampleService.cs:line 20
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "lastname" does not exist
+    Hint: Perhaps you meant to reference the column "example_table.last_name".
+    Position: 49
+    File: parse_relation.c
+    Line: 3633
+    Routine: errorMissingColumn
+2022-08-22 16:55:12.402 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - - - 500 - text/plain;+charset=utf-8 627.6903ms
+2022-08-22 16:57:40.921 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - -
+2022-08-22 16:57:40.923 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 16:57:40.927 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.Example.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-22 16:59:24.403 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 103472.6375ms
+2022-08-22 16:59:24.406 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 16:59:24.413 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "lastname" does not exist
+
+POSITION: 49
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|213_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at BaseService.Data.Repositories.RepositoryBase.QueryFilteredAsync[T](String table, Object param) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\RepositoryBase.cs:line 34
+   at BaseService.Data.Repositories.ExampleRepository.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\ExampleRepository.cs:line 18
+   at BaseService.Services.Services.ExampleService.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Services\Services\ExampleService.cs:line 20
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "lastname" does not exist
+    Hint: Perhaps you meant to reference the column "example_table.last_name".
+    Position: 49
+    File: parse_relation.c
+    Line: 3633
+    Routine: errorMissingColumn
+2022-08-22 16:59:24.483 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - - - 500 - text/plain;+charset=utf-8 103562.5678ms
+2022-08-22 16:59:37.974 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob - -
+2022-08-22 16:59:37.984 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 16:59:37.987 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.Example.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-22 16:59:39.833 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 1839.6277ms
+2022-08-22 16:59:39.836 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 16:59:39.840 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not load file or assembly 'Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'. The system cannot find the file specified.
+File name: 'Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed'
+   at BaseService.Services.Messages.MessageService.PublishMessage[T](T payload, String queue, String routingKey, String exchange)
+   at BaseService.Services.Messages.MessageService.PublishMessage[T](T payload, String queue, String routingKey) in L:\Data\Software\Templates\Basic Microservice\BaseService.Services\Messages\MessageService.cs:line 20
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-22 16:59:39.909 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob - - - 500 - text/plain;+charset=utf-8 1935.2935ms
+2022-08-22 17:02:18.119 +02:00 [INF] Application starting up.
+2022-08-22 17:02:20.433 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-22 17:02:20.437 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-22 17:02:20.442 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 17:02:20.443 +02:00 [INF] Hosting environment: Development
+2022-08-22 17:02:20.445 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-22 17:02:39.754 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob - -
+2022-08-22 17:02:39.794 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 17:02:39.846 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.Example.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-22 17:02:40.044 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.Example.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-22 17:02:40.055 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 202.2315ms
+2022-08-22 17:02:40.059 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 17:02:40.099 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob - - - 200 - application/json;+charset=utf-8 347.5659ms
+2022-08-22 17:05:45.287 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - -
+2022-08-22 17:05:45.289 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 17:05:45.294 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.Example.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-22 17:05:51.169 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 5871.7531ms
+2022-08-22 17:05:51.171 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 17:05:51.177 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "lastname" does not exist
+
+POSITION: 49
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|213_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at BaseService.Data.Repositories.RepositoryBase.QueryFilteredAsync[T](String table, Object param) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\RepositoryBase.cs:line 34
+   at BaseService.Data.Repositories.ExampleRepository.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\ExampleRepository.cs:line 18
+   at BaseService.Services.Services.ExampleService.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Services\Services\ExampleService.cs:line 20
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "lastname" does not exist
+    Hint: Perhaps you meant to reference the column "example_table.last_name".
+    Position: 49
+    File: parse_relation.c
+    Line: 3633
+    Routine: errorMissingColumn
+2022-08-22 17:05:51.349 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - - - 500 - text/plain;+charset=utf-8 6061.6635ms
+2022-08-22 17:06:03.806 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - -
+2022-08-22 17:06:03.817 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 17:06:03.820 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.Example.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-22 17:07:18.647 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 74823.0748ms
+2022-08-22 17:07:18.650 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 17:07:18.660 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "lastname" does not exist
+
+POSITION: 49
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|213_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at BaseService.Data.Repositories.RepositoryBase.QueryFilteredAsync[T](String table, Object param) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\RepositoryBase.cs:line 34
+   at BaseService.Data.Repositories.ExampleRepository.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Data\Repositories\ExampleRepository.cs:line 18
+   at BaseService.Services.Services.ExampleService.FindAsync(ExampleRequest parameters) in L:\Data\Software\Templates\Basic Microservice\BaseService.Services\Services\ExampleService.cs:line 20
+   at BaseService.Api.Controllers.ExampleController.Find(ExampleRequest request) in L:\Data\Software\Templates\Basic Microservice\BaseService.Api\Controllers\ExampleController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "lastname" does not exist
+    Hint: Perhaps you meant to reference the column "example_table.last_name".
+    Position: 49
+    File: parse_relation.c
+    Line: 3633
+    Routine: errorMissingColumn
+2022-08-22 17:07:18.769 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - - - 500 - text/plain;+charset=utf-8 74963.5978ms
+2022-08-22 17:12:00.025 +02:00 [INF] Application starting up.
+2022-08-22 17:12:02.288 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-22 17:12:02.292 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-22 17:12:02.299 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-22 17:12:02.301 +02:00 [INF] Hosting environment: Development
+2022-08-22 17:12:02.303 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-22 17:12:12.989 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - -
+2022-08-22 17:12:13.033 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 17:12:13.087 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Entities.Example.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-22 17:12:31.216 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Entities.Example.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-22 17:12:31.231 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 18136.5583ms
+2022-08-22 17:12:31.236 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-22 17:12:31.276 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/?name=Bob&last_name=Freeman - - - 200 - application/json;+charset=utf-8 18289.7696ms

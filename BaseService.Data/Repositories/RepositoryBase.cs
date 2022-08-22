@@ -1,4 +1,5 @@
-﻿using Dapper;
+﻿using BaseService.Data.Helper;
+using Dapper;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace BaseService.Data.Repositories
 
             foreach (PropertyInfo prop in props)
             {
-                statements.Add($"{prop.Name} = @{prop.Name}");
+                statements.Add($"{prop.Name.ToSnakeCase()} = @{prop.Name}");
             }
 
             sql += string.Join(" AND ", statements);
