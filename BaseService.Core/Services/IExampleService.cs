@@ -1,8 +1,4 @@
-﻿using BaseService.Core.Entities.DomainEntity;
-using BaseService.Core.Entities.RequestEntity;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using BaseService.Core.Entities.Example;
 
 namespace BaseService.Core.Services
 {

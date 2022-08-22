@@ -1,8 +1,6 @@
 ﻿using BaseService.Api.Routing.Constraints;
 using BaseService.Core;
-using BaseService.Core.Entities;
-using BaseService.Core.Entities.DomainEntity;
-using BaseService.Core.Entities.ResponseEntity;
+using BaseService.Core.Entities.Configuration;
 using BaseService.Core.Messages;
 using BaseService.Core.Services;
 using BaseService.Data;
@@ -10,9 +8,7 @@ using BaseService.Services.Messages;
 using BaseService.Services.Services;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
-using Nelibur.ObjectMapper;
 using RabbitMQ.Client;
-using System.Collections.Generic;
 
 namespace BaseService.Api.Extensions
 {
@@ -26,6 +22,7 @@ namespace BaseService.Api.Extensions
         public static void AddAppServices(this IServiceCollection services)
         {
             services.AddScoped<IExampleService, ExampleService>();
+            services.AddScoped<ISnowflakeService, SnowflakeService>();
         }
 
         public static void AddRabbitMQ(this IServiceCollection services, RabbitMqConfig config)

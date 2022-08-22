@@ -1,14 +1,13 @@
-﻿using System;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using BaseService.Core.Assembly;
-using BaseService.Core.Entities;
+﻿using BaseService.Core.Assembly;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using System;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace BaseService.Services.Messages
 {
@@ -42,7 +41,7 @@ namespace BaseService.Services.Messages
                 var message = Encoding.UTF8.GetString(body);
                 var assembly = typeof(CoreAssembly).Assembly;
                 var type = assembly.ExportedTypes.FirstOrDefault(a => a.Name == args.BasicProperties.Type);
-                
+
                 if (type != typeof(T)) return;
                 var o = JsonConvert.DeserializeObject(message, type);
                 if (o == null) return;

@@ -1,4 +1,4 @@
-﻿namespace BaseService.Core.Entities
+﻿namespace BaseService.Core.Entities.Configuration
 {
     public class RabbitMqConfig
     {

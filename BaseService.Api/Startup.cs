@@ -1,16 +1,10 @@
 using BaseService.Api.Extensions;
-using BaseService.Core.Entities;
-using BaseService.Core.Entities.DomainEntity;
-using BaseService.Core.Entities.ResponseEntity;
-using BaseService.Core.Services;
-using BaseService.Services.Services;
+using BaseService.Core.Entities.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Nelibur.ObjectMapper;
-using System.Collections.Generic;
 
 namespace BaseService.Api
 {

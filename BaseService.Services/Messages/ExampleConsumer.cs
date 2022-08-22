@@ -1,5 +1,4 @@
-﻿using System;
-using BaseService.Core.Entities.DomainEntity;
+﻿using BaseService.Core.Entities.Example;
 using RabbitMQ.Client;
 
 namespace BaseService.Services.Messages
@@ -8,7 +7,7 @@ namespace BaseService.Services.Messages
     {
         public ExampleConsumer(IConnectionFactory factory) : base(factory, "queue")
         {
-            
+
         }
 
         protected override void Subscribe(Example example)

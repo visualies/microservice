@@ -1,8 +1,7 @@
-﻿using System;
-using System.Text;
-using BaseService.Core.Messages;
+﻿using BaseService.Core.Messages;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
+using System.Text;
 
 namespace BaseService.Services.Messages
 {
@@ -28,11 +27,11 @@ namespace BaseService.Services.Messages
                 exclusive: false,
                 autoDelete: false,
                 arguments: null);
-            
+
             var json = JsonConvert.SerializeObject(payload);
             var body = Encoding.UTF8.GetBytes(json);
             var properties = _channel.CreateBasicProperties();
-            properties.Type =  typeof(T).Name;
+            properties.Type = typeof(T).Name;
 
             _channel.BasicPublish(exchange: exchange,
                 routingKey: routingKey,

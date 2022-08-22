@@ -1,6 +1,5 @@
 ﻿using BaseService.Core;
-using BaseService.Core.Entities.DomainEntity;
-using BaseService.Core.Entities.ResponseEntity;
+using BaseService.Core.Entities.Example;
 using BaseService.Data.TypeHandlers;
 using Dapper;
 using Microsoft.AspNetCore.Builder;
@@ -28,6 +27,7 @@ namespace BaseService.Api.Extensions
             DefaultTypeMap.MatchNamesWithUnderscores = true;
 
             TinyMapper.Bind<Example, ExampleResponse>();
+            TinyMapper.Bind<ExampleRequest, Example>();
             TinyMapper.Bind<List<Example>, List<ExampleResponse>>();
         }
     }

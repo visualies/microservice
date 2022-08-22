@@ -1,5 +1,4 @@
-﻿using BaseService.Core.Entities.DomainEntity;
-using BaseService.Core.Entities.RequestEntity;
+﻿using BaseService.Core.Entities.Example;
 using BaseService.Core.Repositories;
 using System.Collections.Generic;
 using System.Data;
@@ -36,7 +35,7 @@ namespace BaseService.Data.Repositories
 
         public async Task CreateAsync(Example entity)
         {
-            const string sql = @"INSERT INTO example_table (name, last_name) Values (@Name, @LastName)";
+            const string sql = @"INSERT INTO example_table (id, name, last_name) Values (@Id, @Name, @LastName)";
 
             await ExecuteAsync(sql, entity);
         }
@@ -61,10 +60,10 @@ namespace BaseService.Data.Repositories
             const string sql = @"CREATE TABLE IF NOT EXISTS example_table (
                                     id              varchar(50) NOT NULL,
                                     name            varchar(50) NOT NULL,
-                                    last_name       varchar(50) NOT NULL,
+                                    last_name       varchar(50),
                                     CONSTRAINT PK__example_table PRIMARY KEY (id)
                                     );";
-               
+
             Execute(sql);
         }
     }
