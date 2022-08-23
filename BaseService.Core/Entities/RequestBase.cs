@@ -7,14 +7,14 @@ namespace BaseService.Core.Entities
     {
         [ReservedParameter]
         [FromQuery(Name = "expand")]
-        public string ExpandRequestOption { get; set; }
+        public string Expand { get; set; }
 
         [ReservedParameter]
         [FromQuery(Name = "limit")]
-        public int? LimitRequestOption { get; set; }
+        public int? Limit { get; set; }
 
         [ReservedParameter]
         [FromQuery(Name = "page")]
-        public int? PageRequestOption { get; set; }
+        public int? Page { get; set; }
     }
 }

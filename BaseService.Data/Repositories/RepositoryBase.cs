@@ -36,8 +36,8 @@ namespace BaseService.Data.Repositories
             }
             sql += string.Join(" AND ", statements);
 
-            var limit = Math.Min(param.LimitRequestOption ?? 25, 25);
-            var offset = (param.PageRequestOption ?? 0) * limit;
+            var limit = Math.Min(param.Limit ?? 25, 25);
+            var offset = (param.Page ?? 0) * limit;
             sql += $" LIMIT {limit} OFFSET {offset}";   
 
             return await Connection.QueryAsync<T>(sql, param, _transaction);
