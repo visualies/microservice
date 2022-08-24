@@ -1,4 +1,4 @@
-﻿namespace BaseService.Services.Assembly
+﻿namespace BaseService.Service.Assembly
 {
     public class ServicesAssembly
     {

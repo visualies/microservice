@@ -5,7 +5,7 @@ using BaseService.Core.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace BaseService.Services.Services
+namespace BaseService.Service.Services
 {
     public class ExampleService : IExampleService
     {

@@ -2,7 +2,7 @@
 using IdGen;
 using Microsoft.Extensions.Configuration;
 
-namespace BaseService.Services.Services
+namespace BaseService.Service.Services
 {
     public class SnowflakeService : ISnowflakeService
     {

@@ -1,7 +1,7 @@
 ﻿using BaseService.Core.Entities;
 using RabbitMQ.Client;
 
-namespace BaseService.Services.Messages
+namespace BaseService.Service.Messages
 {
     public class ExampleConsumer : ConsumerBase<Example>
     {

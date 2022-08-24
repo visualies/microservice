@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BaseService.Services.Messages
+namespace BaseService.Service.Messages
 {
     public class ConsumerBase<T> : IHostedService, IDisposable where T : class
 

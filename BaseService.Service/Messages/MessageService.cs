@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace BaseService.Services.Messages
+namespace BaseService.Service.Messages
 {
     public class MessageService : IMessageService
     {
