@@ -1,5 +1,6 @@
+using BaseService.Api.Assembly;
 using BaseService.Api.Extensions;
-using BaseService.Core.Entities.Configuration;
+using BaseService.Core.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -25,6 +26,7 @@ namespace BaseService.Api
             services.AddAppServices();
             services.AddRouteConstraints();
             services.AddControllers();
+            services.AddAutoMapper(typeof(ApiAssembly));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

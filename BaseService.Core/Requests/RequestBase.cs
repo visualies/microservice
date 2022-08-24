@@ -1,7 +1,7 @@
 ﻿using BaseService.Core.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BaseService.Core.Entities
+namespace BaseService.Core.Requests
 {
     public class RequestBase
     {

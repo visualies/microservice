@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Text.Json.Serialization;
 
-namespace BaseService.Core.Entities.Example
+namespace BaseService.Core.Requests
 {
     public class ExampleRequest : RequestBase
     {

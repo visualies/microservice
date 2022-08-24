@@ -1,4 +1,5 @@
-﻿using BaseService.Core.Entities.Example;
+﻿using BaseService.Core.Entities;
+using BaseService.Core.Requests;
 
 namespace BaseService.Core.Services
 {

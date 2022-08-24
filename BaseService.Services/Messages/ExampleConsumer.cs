@@ -1,4 +1,4 @@
-﻿using BaseService.Core.Entities.Example;
+﻿using BaseService.Core.Entities;
 using RabbitMQ.Client;
 
 namespace BaseService.Services.Messages

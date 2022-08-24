@@ -1,5 +1,6 @@
 ﻿using BaseService.Core;
-using BaseService.Core.Entities.Example;
+using BaseService.Core.Entities;
+using BaseService.Core.Requests;
 using BaseService.Core.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;

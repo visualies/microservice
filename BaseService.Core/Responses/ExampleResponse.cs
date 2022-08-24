@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace BaseService.Core.Entities.Example
+namespace BaseService.Core.Responses
 {
     public class ExampleResponse
     {

@@ -3700,3 +3700,106 @@ POSITION: 36
 2022-08-22 18:23:10.737 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-08-22 18:23:10.739 +02:00 [INF] Hosting environment: Development
 2022-08-22 18:23:10.741 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-24 18:43:49.692 +02:00 [INF] Application starting up.
+2022-08-24 18:43:52.069 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-24 18:43:52.074 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-24 18:43:52.079 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-24 18:43:52.081 +02:00 [INF] Hosting environment: Development
+2022-08-24 18:43:52.083 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-24 18:44:01.386 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example?name=Bob - -
+2022-08-24 18:44:01.426 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-24 18:44:01.481 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Requests.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:44:01.504 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 14.439ms
+2022-08-24 18:44:01.509 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-24 18:44:01.513 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AutoMapper.IMapper' while attempting to activate 'BaseService.Api.Controllers.ExampleController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method8(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-24 18:44:01.577 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example?name=Bob - - - 500 - text/plain;+charset=utf-8 193.4460ms
+2022-08-24 18:45:40.992 +02:00 [INF] Application starting up.
+2022-08-24 18:45:43.095 +02:00 [INF] Now listening on: https://localhost:5001
+2022-08-24 18:45:43.107 +02:00 [INF] Now listening on: http://localhost:5000
+2022-08-24 18:45:43.117 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-24 18:45:43.120 +02:00 [INF] Hosting environment: Development
+2022-08-24 18:45:43.122 +02:00 [INF] Content root path: L:\Data\Software\Templates\Basic Microservice\BaseService.Api
+2022-08-24 18:46:44.348 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example?name=Bob - -
+2022-08-24 18:46:44.392 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-24 18:46:44.439 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Requests.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:46:44.694 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Responses.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-24 18:46:44.704 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 258.7227ms
+2022-08-24 18:46:44.709 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-24 18:46:44.727 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example?name=Bob - - - 200 - application/json;+charset=utf-8 382.2214ms
+2022-08-24 18:46:49.792 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example - -
+2022-08-24 18:46:49.794 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-24 18:46:49.811 +02:00 [INF] Route matched with {action = "Find", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Find(BaseService.Core.Requests.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:46:49.857 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BaseService.Core.Responses.ExampleResponse, BaseService.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-24 18:46:49.862 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Find (BaseService.Api) in 37.1245ms
+2022-08-24 18:46:49.865 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Find (BaseService.Api)'
+2022-08-24 18:46:49.892 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example - - - 200 - application/json;+charset=utf-8 99.9674ms
+2022-08-24 18:46:57.870 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/example - 0
+2022-08-24 18:46:57.876 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Post (BaseService.Api)'
+2022-08-24 18:46:57.883 +02:00 [INF] Route matched with {action = "Post", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(BaseService.Core.Requests.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:46:57.901 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2022-08-24 18:46:57.904 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Post (BaseService.Api) in 16.8433ms
+2022-08-24 18:46:57.906 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Post (BaseService.Api)'
+2022-08-24 18:46:57.923 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/example - 0 - 400 - text/plain;+charset=utf-8 53.8598ms
+2022-08-24 18:47:03.148 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/example?name=Bob - 0
+2022-08-24 18:47:03.154 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Post (BaseService.Api)'
+2022-08-24 18:47:03.159 +02:00 [INF] Route matched with {action = "Post", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(BaseService.Core.Requests.ExampleRequest) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:47:03.294 +02:00 [INF] Executing OkObjectResult, writing value of type 'BaseService.Core.Responses.ExampleResponse'.
+2022-08-24 18:47:03.296 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Post (BaseService.Api) in 132.1951ms
+2022-08-24 18:47:03.300 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Post (BaseService.Api)'
+2022-08-24 18:47:03.315 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/example?name=Bob - 0 - 200 - application/json;+charset=utf-8 167.6794ms
+2022-08-24 18:47:24.599 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/api/example/1012040354242760704 - -
+2022-08-24 18:47:24.601 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Delete (BaseService.Api)'
+2022-08-24 18:47:24.607 +02:00 [INF] Route matched with {action = "Delete", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(UInt64) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:47:24.682 +02:00 [INF] Executing OkObjectResult, writing value of type 'BaseService.Core.Responses.ExampleResponse'.
+2022-08-24 18:47:24.684 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Delete (BaseService.Api) in 73.2604ms
+2022-08-24 18:47:24.687 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Delete (BaseService.Api)'
+2022-08-24 18:47:24.703 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:5001/api/example/1012040354242760704 - - - 200 - application/json;+charset=utf-8 104.4371ms
+2022-08-24 18:47:29.016 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/api/example/1012040354242760704 - -
+2022-08-24 18:47:29.021 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Delete (BaseService.Api)'
+2022-08-24 18:47:29.024 +02:00 [INF] Route matched with {action = "Delete", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(UInt64) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:47:29.059 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-08-24 18:47:29.062 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Delete (BaseService.Api) in 34.3207ms
+2022-08-24 18:47:29.064 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Delete (BaseService.Api)'
+2022-08-24 18:47:29.079 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:5001/api/example/1012040354242760704 - - - 404 - text/plain;+charset=utf-8 62.3504ms
+2022-08-24 18:47:37.516 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - -
+2022-08-24 18:47:37.518 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
+2022-08-24 18:47:37.527 +02:00 [INF] Route matched with {action = "Get", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(UInt64) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:47:37.563 +02:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2022-08-24 18:47:37.566 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Get (BaseService.Api) in 36.1206ms
+2022-08-24 18:47:37.568 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
+2022-08-24 18:47:37.583 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - - - 204 0 - 67.3955ms
+2022-08-24 18:47:39.703 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - -
+2022-08-24 18:47:39.706 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
+2022-08-24 18:47:39.711 +02:00 [INF] Route matched with {action = "Get", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(UInt64) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:47:39.744 +02:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2022-08-24 18:47:39.747 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Get (BaseService.Api) in 32.8896ms
+2022-08-24 18:47:39.750 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
+2022-08-24 18:47:39.766 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - - - 204 0 - 63.2689ms
+2022-08-24 18:48:15.524 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - -
+2022-08-24 18:48:15.526 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
+2022-08-24 18:48:15.530 +02:00 [INF] Route matched with {action = "Get", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(UInt64) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:48:15.569 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-08-24 18:48:15.572 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Get (BaseService.Api) in 39.3148ms
+2022-08-24 18:48:15.574 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
+2022-08-24 18:48:15.591 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - - - 404 - application/problem+json;+charset=utf-8 67.1576ms
+2022-08-24 18:48:42.910 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - -
+2022-08-24 18:48:42.913 +02:00 [INF] Executing endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
+2022-08-24 18:48:42.917 +02:00 [INF] Route matched with {action = "Get", controller = "Example"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(UInt64) on controller BaseService.Api.Controllers.ExampleController (BaseService.Api).
+2022-08-24 18:48:42.951 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-08-24 18:48:42.954 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Get (BaseService.Api) in 33.5907ms
+2022-08-24 18:48:42.958 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
+2022-08-24 18:48:42.987 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - - - 404 - text/plain;+charset=utf-8 76.2678ms

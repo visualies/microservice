@@ -1,8 +1,10 @@
-﻿using BaseService.Core.Entities.Example;
+﻿using AutoMapper;
+using BaseService.Core.Entities;
 using BaseService.Core.Messages;
+using BaseService.Core.Requests;
+using BaseService.Core.Responses;
 using BaseService.Core.Services;
 using Microsoft.AspNetCore.Mvc;
-using Nelibur.ObjectMapper;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -13,13 +15,13 @@ namespace BaseService.Api.Controllers
     {
         private readonly IExampleService _exampleService;
         private readonly IMessageService _messageService;
-        private readonly ISnowflakeService _snowflake;
+        private readonly IMapper _mapper;
 
-        public ExampleController(IExampleService exampleService, IMessageService messageService, ISnowflakeService snowflake)
+        public ExampleController(IExampleService exampleService, IMessageService messageService, IMapper mapper)
         {
             _exampleService = exampleService;
             _messageService = messageService;
-            _snowflake = snowflake;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -27,7 +29,7 @@ namespace BaseService.Api.Controllers
         public async Task<IActionResult> Find([FromQuery] ExampleRequest request)
         {
             var example = await _exampleService.FindAsync(request);
-            var response = TinyMapper.Map<List<ExampleResponse>>(example);
+            var response = _mapper.Map<List<ExampleResponse>>(example);
 
             _messageService.PublishMessage(example, "example", "example");
 
@@ -40,7 +42,9 @@ namespace BaseService.Api.Controllers
         {
             var example = await _exampleService.GetAsync(id);
 
-            return Ok(TinyMapper.Map<ExampleResponse>(example));
+            if (example == null) return NotFound($"Example {id} was not found.");
+
+            return Ok(_mapper.Map<ExampleResponse>(example));
         }
 
         [HttpPost]
@@ -49,12 +53,11 @@ namespace BaseService.Api.Controllers
         {
             if (request.Name == null) return BadRequest($"parameter name is required.");
 
-            var example = TinyMapper.Map<Example>(request);
-            example.Id = _snowflake.GenerateId();
+            var example = _mapper.Map<Example>(request);
 
             await _exampleService.CreateAsync(example);
 
-            return Ok(TinyMapper.Map<ExampleResponse>(example));
+            return Ok(_mapper.Map<ExampleResponse>(example));
         }
 
         [HttpPatch]
@@ -69,7 +72,7 @@ namespace BaseService.Api.Controllers
 
             await _exampleService.UpdateAsync(example);
 
-            return Ok(TinyMapper.Map<ExampleResponse>(example));
+            return Ok(_mapper.Map<ExampleResponse>(example));
         }
 
         [HttpDelete]
@@ -82,7 +85,7 @@ namespace BaseService.Api.Controllers
 
             await _exampleService.DeleteAsync(id);
 
-            return Ok(TinyMapper.Map<ExampleResponse>(example));
+            return Ok(_mapper.Map<ExampleResponse>(example));
         }
     }
 }

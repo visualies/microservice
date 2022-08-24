@@ -1,4 +1,4 @@
-﻿namespace BaseService.Core.Entities.Configuration
+﻿namespace BaseService.Core.Configuration
 {
     public class DatabaseConfig
     {

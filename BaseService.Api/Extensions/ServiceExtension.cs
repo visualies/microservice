@@ -1,6 +1,6 @@
 ﻿using BaseService.Api.Routing.Constraints;
 using BaseService.Core;
-using BaseService.Core.Entities.Configuration;
+using BaseService.Core.Configuration;
 using BaseService.Core.Messages;
 using BaseService.Core.Services;
 using BaseService.Data;

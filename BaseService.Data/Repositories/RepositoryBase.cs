@@ -1,5 +1,5 @@
 ﻿using BaseService.Core.Attributes;
-using BaseService.Core.Entities;
+using BaseService.Core.Requests;
 using BaseService.Data.Helper;
 using Dapper;
 using System;
