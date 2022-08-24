@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["BaseService.Api/BaseService.Api.csproj", "BaseService.Api/"]
-COPY ["BaseService.Services/BaseService.Services.csproj", "BaseService.Services/"]
+COPY ["BaseService.Service/BaseService.Service.csproj", "BaseService.Service/"]
 COPY ["BaseService.Core/BaseService.Core.csproj", "BaseService.Core/"]
 COPY ["BaseService.Data/BaseService.Data.csproj", "BaseService.Data/"]
 RUN dotnet restore "BaseService.Api/BaseService.Api.csproj"
