@@ -1,9 +1,9 @@
 ﻿using BaseService.Core.Entities;
-using BaseService.Core.Requests;
+using BaseService.Core.QueryParams;
 
 namespace BaseService.Core.Services
 {
-    public interface IExampleService : IServiceBase<Example, ExampleRequest, ulong>
+    public interface IExampleService : IServiceBase<Example, ExampleQuery, ulong>
     {
 
     }

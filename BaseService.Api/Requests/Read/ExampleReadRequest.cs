@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace BaseService.Core.Requests
 {
-    public class ExampleRequest : RequestBase
+    public class ExampleReadRequest : RequestBase
     {
         [FromQuery(Name = "name")]
         [JsonPropertyName("name")]

@@ -1,6 +1,6 @@
 ﻿using BaseService.Core.Entities;
+using BaseService.Core.QueryParams;
 using BaseService.Core.Repositories;
-using BaseService.Core.Requests;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
@@ -14,7 +14,7 @@ namespace BaseService.Data.Repositories
 
         }
 
-        public async Task<IEnumerable<Example>> FindAsync(ExampleRequest parameters)
+        public async Task<IEnumerable<Example>> FindAsync(ExampleQuery parameters)
         {
             return await QueryFilteredAsync<Example>("example_table", parameters);
         }

@@ -3803,3 +3803,4 @@ System.InvalidOperationException: Unable to resolve service for type 'AutoMapper
 2022-08-24 18:48:42.954 +02:00 [INF] Executed action BaseService.Api.Controllers.ExampleController.Get (BaseService.Api) in 33.5907ms
 2022-08-24 18:48:42.958 +02:00 [INF] Executed endpoint 'BaseService.Api.Controllers.ExampleController.Get (BaseService.Api)'
 2022-08-24 18:48:42.987 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/example/1012040354242760704 - - - 404 - text/plain;+charset=utf-8 76.2678ms
+2023-04-13 21:50:55.444 +02:00 [INF] Application starting up.

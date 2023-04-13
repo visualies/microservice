@@ -1,5 +1,5 @@
 ﻿using BaseService.Core.Attributes;
-using BaseService.Core.Requests;
+using BaseService.Core.QueryParams;
 using BaseService.Data.Helper;
 using Dapper;
 using System;
@@ -21,7 +21,7 @@ namespace BaseService.Data.Repositories
             _transaction = transaction;
         }
 
-        protected async Task<IEnumerable<T>> QueryFilteredAsync<T>(string table, RequestBase param)
+        protected async Task<IEnumerable<T>> QueryFilteredAsync<T>(string table, QueryBase param)
         {
             var sql = $"SELECT * FROM {table}";
             var statements = new List<string>();

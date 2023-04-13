@@ -24,6 +24,7 @@ namespace BaseService.Api
             services.AddUnitOfWork(_configuration.GetSection("Database").Get<DatabaseConfig>());
             services.AddRabbitMQ(_configuration.GetSection("RabbitMQ").Get<RabbitMqConfig>());
             services.AddAppServices();
+            services.AddCors(options => options.AddDefaultPolicy(policy => policy.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader().AllowCredentials()));
             services.AddRouteConstraints();
             services.AddControllers();
             services.AddAutoMapper(typeof(ApiAssembly));

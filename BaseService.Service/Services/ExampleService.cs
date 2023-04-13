@@ -1,6 +1,6 @@
 ﻿using BaseService.Core;
 using BaseService.Core.Entities;
-using BaseService.Core.Requests;
+using BaseService.Core.QueryParams;
 using BaseService.Core.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -16,7 +16,7 @@ namespace BaseService.Service.Services
             _context = unitOfWork;
         }
 
-        public async Task<IEnumerable<Example>> FindAsync(ExampleRequest parameters)
+        public async Task<IEnumerable<Example>> FindAsync(ExampleQuery parameters)
         {
             return await _context.ExampleRepository.FindAsync(parameters);
         }

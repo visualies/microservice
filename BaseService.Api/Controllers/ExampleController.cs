@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
+using BaseService.Api.Requests.Create;
+using BaseService.Api.Requests.Update;
 using BaseService.Core.Entities;
 using BaseService.Core.Messages;
+using BaseService.Core.QueryParams;
 using BaseService.Core.Requests;
 using BaseService.Core.Responses;
 using BaseService.Core.Services;
@@ -26,9 +29,10 @@ namespace BaseService.Api.Controllers
 
         [HttpGet]
         [Route("/api/example/")]
-        public async Task<IActionResult> Find([FromQuery] ExampleRequest request)
+        public async Task<IActionResult> Find([FromQuery] ExampleReadRequest request)
         {
-            var example = await _exampleService.FindAsync(request);
+            var query = _mapper.Map<ExampleQuery>(request);
+            var example = await _exampleService.FindAsync(query);
             var response = _mapper.Map<List<ExampleResponse>>(example);
 
             _messageService.PublishMessage(example, "example", "example");
@@ -49,7 +53,7 @@ namespace BaseService.Api.Controllers
 
         [HttpPost]
         [Route("/api/example/")]
-        public async Task<IActionResult> Post([FromQuery] ExampleRequest request)
+        public async Task<IActionResult> Post([FromBody] ExampleCreateRequest request)
         {
             if (request.Name == null) return BadRequest($"parameter name is required.");
 
@@ -62,7 +66,7 @@ namespace BaseService.Api.Controllers
 
         [HttpPatch]
         [Route("/api/example/{id}")]
-        public async Task<IActionResult> Patch(ulong id, [FromQuery] ExampleRequest request)
+        public async Task<IActionResult> Patch(ulong id, [FromQuery] ExampleUpdateRequest request)
         {
             var example = await _exampleService.GetAsync(id);
 
